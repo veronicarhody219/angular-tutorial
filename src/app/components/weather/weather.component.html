@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="upper-data">
+    <img
+      src="../../../assets/weather-7234860_1280.png"
+      alt="hot weather"
+      *ngIf="14 > 15"
+    />
+    <img
+      src="../../../assets/snow-1987413_1280.png"
+      alt="cold weather"
+      *ngIf="14 <= 15"
+    />
+    <div class="weather-data">
+      <div class="location">New York</div>
+      <div class="temperature">{{ 14.4 | number: "1.0-0" }}°C</div>
+    </div>
+  </div>
+  <div class="lower-data">
+    <div class="more-info-label">More info</div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <span>min</span>
+        </div>
+        <div class="info-block-value">10°C</div>
+      </div>
+    </div>
+  </div>
+</div>
